@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Audience import Audience
 
 
@@ -28,7 +28,7 @@ class BusinessAudience(Audience):
         default=None,
         description="The size of the business in annual revenue.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.QuantitativeValue import QuantitativeValue

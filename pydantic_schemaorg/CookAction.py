@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreateAction import CreateAction
 
 
@@ -27,7 +27,7 @@ class CookAction(CreateAction):
         default=None,
         description="A sub property of location. The specific food event where the action occurred.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Recipe import Recipe

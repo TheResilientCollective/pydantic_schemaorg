@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -43,7 +43,7 @@ class ProgramMembership(Intangible):
         default=None,
         description="The organization (airline, travelers' club, etc.) the membership is made with.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

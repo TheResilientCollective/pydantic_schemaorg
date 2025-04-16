@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Trip import Trip
 
 
@@ -23,7 +23,7 @@ class TouristTrip(Trip):
         description="Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular"
      "country, etc.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

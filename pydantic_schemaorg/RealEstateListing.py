@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.WebPage import WebPage
 
 
@@ -27,7 +27,7 @@ class RealEstateListing(WebPage):
         default=None,
         description="Publication date of an online listing.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Duration import Duration

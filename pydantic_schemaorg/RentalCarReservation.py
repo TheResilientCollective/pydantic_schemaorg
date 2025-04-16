@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Reservation import Reservation
 
 
@@ -33,7 +33,7 @@ class RentalCarReservation(Reservation):
         default=None,
         description="When a rental car can be dropped off.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Place import Place

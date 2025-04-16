@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Legislation import Legislation
 from pydantic_schemaorg.MediaObject import MediaObject
 
@@ -24,7 +24,7 @@ class LegislationObject(Legislation, MediaObject):
      "files with different legal values. Typically a digitally signed PDF have a \"stronger\""
      "legal value than the HTML file of the same act.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.LegalValueLevel import LegalValueLevel

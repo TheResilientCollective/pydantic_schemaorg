@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.SoftwareApplication import SoftwareApplication
 from pydantic_schemaorg.Game import Game
 

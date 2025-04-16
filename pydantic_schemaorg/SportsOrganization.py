@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Organization import Organization
 
 
@@ -21,7 +21,7 @@ class SportsOrganization(Organization):
         default=None,
         description="A type of sport (e.g. Baseball).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Action import Action
 
 

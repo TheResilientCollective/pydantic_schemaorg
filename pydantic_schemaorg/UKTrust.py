@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.UKNonprofitType import UKNonprofitType
 
 
@@ -12,4 +12,4 @@ class UKTrust(UKNonprofitType):
     Model depth: 6
     """
     type_: str = Field(default="UKTrust", alias='@type', const=True)
-    
+

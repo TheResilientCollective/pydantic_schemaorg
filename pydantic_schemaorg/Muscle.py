@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.AnatomicalStructure import AnatomicalStructure
 
 
@@ -36,7 +36,7 @@ class Muscle(AnatomicalStructure):
         default=None,
         description="The place of attachment of a muscle, or what the muscle moves.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Nerve import Nerve

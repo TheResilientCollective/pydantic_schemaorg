@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalEntity import MedicalEntity
 
 
@@ -48,7 +48,7 @@ class MedicalDevice(MedicalEntity):
         default=None,
         description="A contraindication for this therapy.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

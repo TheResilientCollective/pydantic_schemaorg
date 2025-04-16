@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PerformingGroup import PerformingGroup
 
 
@@ -41,7 +41,7 @@ class MusicGroup(PerformingGroup):
         default=None,
         description="A member of a music group&#x2014;for example, John, Paul, George, or Ringo.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

@@ -6,7 +6,7 @@ from pydantic import StrictBool, StrictInt, StrictFloat
 from datetime import datetime, time
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LocalBusiness import LocalBusiness
 
 
@@ -58,7 +58,7 @@ class LodgingBusiness(LocalBusiness):
         default=None,
         description="The latest someone may check out of a lodging establishment.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.LocationFeatureSpecification import LocationFeatureSpecification

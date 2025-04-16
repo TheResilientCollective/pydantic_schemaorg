@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -33,7 +33,7 @@ class OwnershipInfo(StructuredValue):
         default=None,
         description="The date and time of obtaining the product.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Person import Person

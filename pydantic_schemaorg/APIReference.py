@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.TechArticle import TechArticle
 
 
@@ -35,7 +35,7 @@ class APIReference(TechArticle):
         default=None,
         description="Type of app development: phone, Metro style, desktop, XBox, etc.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

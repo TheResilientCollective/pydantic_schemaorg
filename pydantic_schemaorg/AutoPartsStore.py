@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Store import Store
 from pydantic_schemaorg.AutomotiveBusiness import AutomotiveBusiness
 
@@ -13,4 +13,4 @@ class AutoPartsStore(Store, AutomotiveBusiness):
     Model depth: 5
     """
     type_: str = Field(default="AutoPartsStore", alias='@type', const=True)
-    
+

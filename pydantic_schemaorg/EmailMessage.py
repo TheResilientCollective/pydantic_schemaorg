@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Message import Message
 
 
@@ -12,4 +12,4 @@ class EmailMessage(Message):
     Model depth: 4
     """
     type_: str = Field(default="EmailMessage", alias='@type', const=True)
-    
+

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.QualitativeValue import QualitativeValue
 
 
@@ -12,4 +12,4 @@ class SteeringPositionValue(QualitativeValue):
     Model depth: 5
     """
     type_: str = Field(default="SteeringPositionValue", alias='@type', const=True)
-    
+

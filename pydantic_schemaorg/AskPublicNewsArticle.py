@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.NewsArticle import NewsArticle
 
 
@@ -14,4 +14,4 @@ class AskPublicNewsArticle(NewsArticle):
     Model depth: 5
     """
     type_: str = Field(default="AskPublicNewsArticle", alias='@type', const=True)
-    
+

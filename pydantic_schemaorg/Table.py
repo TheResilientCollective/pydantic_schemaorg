@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.WebPageElement import WebPageElement
 
 
@@ -12,4 +12,4 @@ class Table(WebPageElement):
     Model depth: 4
     """
     type_: str = Field(default="Table", alias='@type', const=True)
-    
+

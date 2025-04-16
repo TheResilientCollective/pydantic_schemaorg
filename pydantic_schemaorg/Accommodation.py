@@ -5,7 +5,7 @@ from pydantic import AnyUrl, StrictBool, StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Place import Place
 
 
@@ -100,7 +100,7 @@ class Accommodation(Place):
         description="Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]."
      "This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

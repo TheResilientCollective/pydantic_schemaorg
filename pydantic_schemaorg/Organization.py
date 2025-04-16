@@ -6,7 +6,7 @@ from pydantic import AnyUrl
 from datetime import date
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Thing import Thing
 
 
@@ -312,7 +312,7 @@ class Organization(Thing):
         default=None,
         description="Products owned by the organization or person.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.ContactPoint import ContactPoint

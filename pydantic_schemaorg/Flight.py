@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Trip import Trip
 
 
@@ -78,7 +78,7 @@ class Flight(Trip):
         default=None,
         description="The airport where the flight terminates.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.BoardingPolicyType import BoardingPolicyType

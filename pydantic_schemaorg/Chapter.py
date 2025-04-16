@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -29,7 +29,7 @@ class Chapter(CreativeWork):
         default=None,
         description="The page on which the work ends; for example \"138\" or \"xvi\".",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Integer import Integer

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalGuideline import MedicalGuideline
 
 
@@ -20,7 +20,7 @@ class MedicalGuidelineRecommendation(MedicalGuideline):
         default=None,
         description="Strength of the guideline's recommendation (e.g. 'class I').",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

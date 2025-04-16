@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Vessel import Vessel
 
 
@@ -29,7 +29,7 @@ class Vein(Vessel):
         description="The anatomical or organ system drained by this vessel; generally refers to a specific"
      "part of an organ.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.AnatomicalStructure import AnatomicalStructure

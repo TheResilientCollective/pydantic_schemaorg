@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -37,7 +37,7 @@ class OrderItem(Intangible):
         default=None,
         description="The current status of the order item.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.ParcelDelivery import ParcelDelivery

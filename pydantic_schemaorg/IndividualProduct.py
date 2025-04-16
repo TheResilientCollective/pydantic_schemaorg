@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Product import Product
 
 
@@ -20,7 +20,7 @@ class IndividualProduct(Product):
         description="The serial number or any alphanumeric identifier of a particular product. When attached"
      "to an offer, it is a shortcut for the serial number of the product included in the offer.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

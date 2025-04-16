@@ -6,7 +6,7 @@ from typing import List, Optional, Union
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -41,7 +41,7 @@ class Role(Intangible):
         default=None,
         description="The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -63,7 +63,7 @@ class CreativeWorkSeason(CreativeWork):
         default=None,
         description="An episode of a tv, radio or game media within a series or season.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.VideoObject import VideoObject

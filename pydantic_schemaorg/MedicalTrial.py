@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalStudy import MedicalStudy
 
 
@@ -22,7 +22,7 @@ class MedicalTrial(MedicalStudy):
         default=None,
         description="Specifics about the trial design (enumerated).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicalTrialDesign import MedicalTrialDesign

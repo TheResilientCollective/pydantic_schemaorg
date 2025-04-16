@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalEntity import MedicalEntity
 
 
@@ -46,7 +46,7 @@ class DrugCost(MedicalEntity):
         description="Additional details to capture the origin of the cost data. For example, 'Medicare Part"
      "B'.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DrugCostCategory import DrugCostCategory

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PhysicalActivityCategory import PhysicalActivityCategory
 
 
@@ -14,4 +14,4 @@ class AerobicActivity(PhysicalActivityCategory):
     Model depth: 5
     """
     type_: str = Field(default="AerobicActivity", alias='@type', const=True)
-    
+

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -23,7 +23,7 @@ class Guide(CreativeWork):
         default=None,
         description="This Review or Rating is relevant to this part or facet of the itemReviewed.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

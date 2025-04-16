@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.BroadcastService import BroadcastService
 
 
@@ -13,4 +13,4 @@ class RadioBroadcastService(BroadcastService):
     Model depth: 5
     """
     type_: str = Field(default="RadioBroadcastService", alias='@type', const=True)
-    
+

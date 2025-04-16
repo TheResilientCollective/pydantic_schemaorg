@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictBool
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -53,7 +53,7 @@ class ShippingRateSettings(StructuredValue):
      "(for [[DeliveryTimeSettings]]) or shippingLabel (for [[ShippingRateSettings]]),"
      "since this property is for use with unlabelled settings.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Trip import Trip
 
 
@@ -31,7 +31,7 @@ class BusTrip(Trip):
         default=None,
         description="The name of the bus (e.g. Bolt Express).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.BusStop import BusStop

@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import datetime, time
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -54,7 +54,7 @@ class Trip(Intangible):
         description="Identifies that this [[Trip]] is a subTrip of another Trip. For example Day 1, Day 2, etc."
      "of a multi-day trip.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Offer import Offer

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Organization import Organization
 
 
@@ -22,7 +22,7 @@ class Corporation(Organization):
      "the exchange component of the tickerSymbol attribute, we recommend using the controlled"
      "vocabulary of Market Identifier Codes (MIC) specified in ISO15022.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

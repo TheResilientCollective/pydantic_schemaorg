@@ -6,7 +6,7 @@ from typing import List, Optional, Union
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -79,7 +79,7 @@ class PriceSpecification(StructuredValue):
      "specification is valid. This allows e.g. specifying that a certain freight charge is"
      "valid only for a certain quantity.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Boolean import Boolean

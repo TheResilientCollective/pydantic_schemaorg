@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.HowTo import HowTo
 
 
@@ -60,7 +60,7 @@ class Recipe(HowTo):
         default=None,
         description="The method of cooking, such as Frying, Steaming, ...",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

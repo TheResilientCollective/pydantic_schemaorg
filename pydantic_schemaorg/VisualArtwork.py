@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -73,7 +73,7 @@ class VisualArtwork(CreativeWork):
         default=None,
         description="The individual who traces over the pencil drawings in ink after pencils are complete.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

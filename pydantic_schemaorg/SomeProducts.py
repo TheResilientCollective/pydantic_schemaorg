@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Product import Product
 
 
@@ -19,7 +19,7 @@ class SomeProducts(Product):
         default=None,
         description="The current approximate inventory level for the item or items.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.QuantitativeValue import QuantitativeValue

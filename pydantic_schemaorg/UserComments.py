@@ -6,7 +6,7 @@ from pydantic import AnyUrl
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.UserInteraction import UserInteraction
 
 
@@ -40,7 +40,7 @@ class UserComments(UserInteraction):
         description="The creator/author of this CreativeWork. This is the same as the Author property for"
      "CreativeWork.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.CreativeWork import CreativeWork

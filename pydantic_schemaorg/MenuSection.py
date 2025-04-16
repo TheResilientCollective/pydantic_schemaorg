@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -25,7 +25,7 @@ class MenuSection(CreativeWork):
         default=None,
         description="A food or drink item contained in a menu or menu section.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MenuItem import MenuItem

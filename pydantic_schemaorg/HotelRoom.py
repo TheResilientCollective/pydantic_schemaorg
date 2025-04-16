@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Room import Room
 
 
@@ -30,7 +30,7 @@ class HotelRoom(Room):
      "the permitted usage as per the contractual agreement (e.g. a double room used by a single"
      "person). Typical unit code(s): C62 for person",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

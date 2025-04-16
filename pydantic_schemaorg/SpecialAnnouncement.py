@@ -6,7 +6,7 @@ from pydantic import AnyUrl
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -125,7 +125,7 @@ class SpecialAnnouncement(CreativeWork):
         default=None,
         description="Information about disease prevention.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.LocalBusiness import LocalBusiness

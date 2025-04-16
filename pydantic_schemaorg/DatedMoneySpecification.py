@@ -6,7 +6,7 @@ from typing import List, Optional, Union
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -40,7 +40,7 @@ class DatedMoneySpecification(StructuredValue):
      "e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)"
      "(LETS) and other currency types e.g. \"Ithaca HOUR\".",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

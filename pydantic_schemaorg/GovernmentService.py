@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Service import Service
 
 
@@ -27,7 +27,7 @@ class GovernmentService(Service):
      "of services that are provided by an organization, but operated by another organization"
      "like a subcontractor.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

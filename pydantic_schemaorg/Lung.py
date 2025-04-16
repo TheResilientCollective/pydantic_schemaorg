@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PhysicalExam import PhysicalExam
 
 
@@ -12,4 +12,4 @@ class Lung(PhysicalExam):
     Model depth: 5
     """
     type_: str = Field(default="Lung", alias='@type', const=True)
-    
+

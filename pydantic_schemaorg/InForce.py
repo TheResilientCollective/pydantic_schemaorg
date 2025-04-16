@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LegalForceStatus import LegalForceStatus
 
 
@@ -12,4 +12,4 @@ class InForce(LegalForceStatus):
     Model depth: 6
     """
     type_: str = Field(default="InForce", alias='@type', const=True)
-    
+

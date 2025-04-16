@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MusicPlaylist import MusicPlaylist
 
 
@@ -41,7 +41,7 @@ class MusicRelease(MusicPlaylist):
         default=None,
         description="The label that issued the release.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MusicAlbum import MusicAlbum

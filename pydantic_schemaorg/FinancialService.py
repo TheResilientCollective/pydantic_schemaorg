@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LocalBusiness import LocalBusiness
 
 
@@ -21,7 +21,7 @@ class FinancialService(LocalBusiness):
         description="Description of fees, commissions, and other terms applied either to a class of financial"
      "product, or by a financial service organization.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

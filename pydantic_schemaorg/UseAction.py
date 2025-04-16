@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ConsumeAction import ConsumeAction
 
 
@@ -12,4 +12,4 @@ class UseAction(ConsumeAction):
     Model depth: 4
     """
     type_: str = Field(default="UseAction", alias='@type', const=True)
-    
+

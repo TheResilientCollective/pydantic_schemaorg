@@ -6,7 +6,7 @@ from datetime import date
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -100,7 +100,7 @@ class Legislation(CreativeWork):
      ": when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of"
      "2015-04-12 of the \"National Insurance Contributions Act 2015\")",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Person import Person

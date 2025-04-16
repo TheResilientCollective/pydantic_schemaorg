@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -43,7 +43,7 @@ class GeoCoordinates(StructuredValue):
         description="The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2"
      "country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Reservation import Reservation
 
 
@@ -19,7 +19,7 @@ class ReservationPackage(Reservation):
         default=None,
         description="The individual reservations included in the package. Typically a repeated property.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Reservation import Reservation

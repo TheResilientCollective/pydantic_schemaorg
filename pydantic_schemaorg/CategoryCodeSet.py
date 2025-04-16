@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.DefinedTermSet import DefinedTermSet
 
 
@@ -19,7 +19,7 @@ class CategoryCodeSet(DefinedTermSet):
         default=None,
         description="A Category code contained in this code set.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.CategoryCode import CategoryCode

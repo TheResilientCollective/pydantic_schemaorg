@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.EmergencyService import EmergencyService
 from pydantic_schemaorg.CivicStructure import CivicStructure
 from pydantic_schemaorg.MedicalOrganization import MedicalOrganization
@@ -30,7 +30,7 @@ class Hospital(MedicalOrganization, EmergencyService, CivicStructure):
         default=None,
         description="A medical service available from this provider.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicalSpecialty import MedicalSpecialty

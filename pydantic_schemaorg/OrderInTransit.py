@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.OrderStatus import OrderStatus
 
 
@@ -12,4 +12,4 @@ class OrderInTransit(OrderStatus):
     Model depth: 6
     """
     type_: str = Field(default="OrderInTransit", alias='@type', const=True)
-    
+

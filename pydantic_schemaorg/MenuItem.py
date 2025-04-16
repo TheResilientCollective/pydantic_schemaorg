@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -39,7 +39,7 @@ class MenuItem(Intangible):
         description="Indicates a dietary restriction or guideline for which this recipe or menu item is suitable,"
      "e.g. diabetic, halal etc.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MenuSection import MenuSection

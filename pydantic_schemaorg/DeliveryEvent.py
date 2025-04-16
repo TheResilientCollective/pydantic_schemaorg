@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Event import Event
 
 
@@ -32,7 +32,7 @@ class DeliveryEvent(Event):
         default=None,
         description="When the item is available for pickup from the store, locker, etc.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

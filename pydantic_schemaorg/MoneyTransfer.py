@@ -5,7 +5,7 @@ from pydantic import StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.TransferAction import TransferAction
 
 
@@ -26,7 +26,7 @@ class MoneyTransfer(TransferAction):
         description="A bank or bank’s branch, financial institution or international financial institution"
      "operating the beneficiary’s bank account or releasing funds for the beneficiary.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

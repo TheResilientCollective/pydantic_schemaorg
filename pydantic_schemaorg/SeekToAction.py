@@ -5,7 +5,7 @@ from pydantic import StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Action import Action
 
 
@@ -22,7 +22,7 @@ class SeekToAction(Action):
         description="The start time of the clip expressed as the number of seconds from the beginning of the"
      "work.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

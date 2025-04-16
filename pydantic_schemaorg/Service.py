@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -124,7 +124,7 @@ class Service(Intangible):
         default=None,
         description="The audience eligible for this service.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Offer import Offer

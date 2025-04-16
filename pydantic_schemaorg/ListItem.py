@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -31,7 +31,7 @@ class ListItem(Intangible):
         default=None,
         description="An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')’.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Integer import Integer

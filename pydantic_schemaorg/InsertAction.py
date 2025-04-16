@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.AddAction import AddAction
 
 
@@ -19,7 +19,7 @@ class InsertAction(AddAction):
         default=None,
         description="A sub property of location. The final location of the object or the agent after the action.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Place import Place

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.DataType import DataType
 
 
@@ -12,4 +12,4 @@ class Date(DataType):
     Model depth: 5
     """
     type_: str = Field(default="Date", alias='@type', const=True)
-    
+

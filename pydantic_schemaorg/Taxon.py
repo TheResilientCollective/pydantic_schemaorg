@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Thing import Thing
 
 
@@ -33,7 +33,7 @@ class Taxon(Thing):
         description="The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary"
      "– (typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DefinedTerm import DefinedTerm

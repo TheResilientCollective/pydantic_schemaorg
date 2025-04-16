@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.SoftwareApplication import SoftwareApplication
 
 
@@ -21,7 +21,7 @@ class MobileApplication(SoftwareApplication):
         description="Specifies specific carrier(s) requirements for the application (e.g. an application"
      "may only work on a specific carrier network).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

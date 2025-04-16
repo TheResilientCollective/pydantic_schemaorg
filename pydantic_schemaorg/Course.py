@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LearningResource import LearningResource
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
@@ -50,7 +50,7 @@ class Course(LearningResource, CreativeWork):
         description="A description of the qualification, award, certificate, diploma or other occupational"
      "credential awarded as a consequence of successful completion of this course or program.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Integer import Integer

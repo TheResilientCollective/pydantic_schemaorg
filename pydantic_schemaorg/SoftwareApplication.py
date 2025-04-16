@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -123,7 +123,7 @@ class SoftwareApplication(CreativeWork):
         description="Countries for which the application is supported. You can also provide the two-letter"
      "ISO 3166-1 alpha-2 country code.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

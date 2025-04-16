@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Action import Action
 
 
@@ -25,7 +25,7 @@ class ConsumeAction(Action):
         description="An Offer which must be accepted before the user can perform the Action. For example, the"
      "user may need to buy a movie before being able to watch it.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.ActionAccessSpecification import ActionAccessSpecification

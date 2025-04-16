@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ReactAction import ReactAction
 
 
@@ -13,4 +13,4 @@ class DislikeAction(ReactAction):
     Model depth: 5
     """
     type_: str = Field(default="DislikeAction", alias='@type', const=True)
-    
+

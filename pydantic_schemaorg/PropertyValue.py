@@ -5,7 +5,7 @@ from pydantic import AnyUrl, StrictBool, StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -77,7 +77,7 @@ class PropertyValue(StructuredValue):
         description="A secondary value that provides additional information on the original value, e.g."
      "a reference temperature or a type of measurement.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

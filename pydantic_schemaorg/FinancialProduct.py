@@ -5,7 +5,7 @@ from pydantic import AnyUrl, StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Service import Service
 
 
@@ -34,7 +34,7 @@ class FinancialProduct(Service):
         description="The interest rate, charged or paid, applicable to the financial product. Note: This"
      "is different from the calculated annualPercentageRate.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

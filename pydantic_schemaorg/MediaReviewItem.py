@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -22,7 +22,7 @@ class MediaReviewItem(CreativeWork):
         description="In the context of a [[MediaReview]], indicates specific media item(s) that are grouped"
      "using a [[MediaReviewItem]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MediaObject import MediaObject

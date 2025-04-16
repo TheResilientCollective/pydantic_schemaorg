@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Reservation import Reservation
 
 
@@ -30,7 +30,7 @@ class TaxiReservation(Reservation):
         default=None,
         description="When a taxi will pickup a passenger or a rental car can be picked up.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Integer import Integer

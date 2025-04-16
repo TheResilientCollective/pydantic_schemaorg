@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PeopleAudience import PeopleAudience
 from pydantic_schemaorg.Audience import Audience
 
@@ -13,4 +13,4 @@ class MedicalAudience(PeopleAudience, Audience):
     Model depth: 4
     """
     type_: str = Field(default="MedicalAudience", alias='@type', const=True)
-    
+

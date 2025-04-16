@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Event import Event
 
 
@@ -32,7 +32,7 @@ class EducationEvent(Event):
         description="The item being described is intended to assess the competency or learning outcome defined"
      "by the referenced term.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

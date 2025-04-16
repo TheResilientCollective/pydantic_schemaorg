@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Resort import Resort
 from pydantic_schemaorg.SportsActivityLocation import SportsActivityLocation
 
@@ -13,4 +13,4 @@ class SkiResort(Resort, SportsActivityLocation):
     Model depth: 5
     """
     type_: str = Field(default="SkiResort", alias='@type', const=True)
-    
+

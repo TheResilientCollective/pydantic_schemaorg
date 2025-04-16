@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Quantity import Quantity
 
 
@@ -13,4 +13,4 @@ class Mass(Quantity):
     Model depth: 4
     """
     type_: str = Field(default="Mass", alias='@type', const=True)
-    
+

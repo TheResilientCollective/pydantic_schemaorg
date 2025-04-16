@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalCondition import MedicalCondition
 
 
@@ -31,7 +31,7 @@ class InfectiousDisease(MedicalCondition):
         default=None,
         description="The class of infectious agent (bacteria, prion, etc.) that causes the disease.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

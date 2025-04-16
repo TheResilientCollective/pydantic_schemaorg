@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MoveAction import MoveAction
 
 
@@ -20,7 +20,7 @@ class TravelAction(MoveAction):
         default=None,
         description="The distance travelled, e.g. exercising or travelling.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Distance import Distance

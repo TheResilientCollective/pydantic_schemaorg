@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Trip import Trip
 
 
@@ -39,7 +39,7 @@ class TrainTrip(Trip):
         default=None,
         description="The station from which the train departs.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.TrainStation import TrainStation

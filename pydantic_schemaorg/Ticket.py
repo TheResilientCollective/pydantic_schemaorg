@@ -6,7 +6,7 @@ from pydantic import AnyUrl, StrictInt, StrictFloat
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalEntity import MedicalEntity
 
 
@@ -94,7 +94,7 @@ class MedicalCondition(MedicalEntity):
      "of the medical condition while symptoms are the subjective experience of the medical"
      "condition.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

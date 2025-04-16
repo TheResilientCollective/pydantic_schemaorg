@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictBool
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Event import Event
 
 
@@ -30,7 +30,7 @@ class PublicationEvent(Event):
         default=None,
         description="A flag to signal that the item, event, or place is accessible for free.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Person import Person

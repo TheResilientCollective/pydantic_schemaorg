@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Place import Place
 
 
@@ -12,4 +12,4 @@ class LandmarksOrHistoricalBuildings(Place):
     Model depth: 3
     """
     type_: str = Field(default="LandmarksOrHistoricalBuildings", alias='@type', const=True)
-    
+

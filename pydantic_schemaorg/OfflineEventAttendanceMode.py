@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.EventAttendanceModeEnumeration import EventAttendanceModeEnumeration
 
 
@@ -12,4 +12,4 @@ class OfflineEventAttendanceMode(EventAttendanceModeEnumeration):
     Model depth: 5
     """
     type_: str = Field(default="OfflineEventAttendanceMode", alias='@type', const=True)
-    
+

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.DigitalDocumentPermissionType import DigitalDocumentPermissionType
 
 
@@ -12,4 +12,4 @@ class WritePermission(DigitalDocumentPermissionType):
     Model depth: 5
     """
     type_: str = Field(default="WritePermission", alias='@type', const=True)
-    
+

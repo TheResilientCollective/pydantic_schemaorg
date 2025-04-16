@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.FindAction import FindAction
 
 
@@ -22,7 +22,7 @@ class TrackAction(FindAction):
         default=None,
         description="A sub property of instrument. The method of delivery.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DeliveryMethod import DeliveryMethod

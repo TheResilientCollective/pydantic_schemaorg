@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Thing import Thing
 
 
@@ -47,7 +47,7 @@ class MedicalEntity(Thing):
         description="The drug or supplement's legal status, including any controlled substance schedules"
      "that apply.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicineSystem import MedicineSystem

@@ -5,7 +5,7 @@ from datetime import date, datetime
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -33,7 +33,7 @@ class DataFeedItem(Intangible):
         default=None,
         description="The date on which the CreativeWork was created or the item was added to a DataFeed.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DateTime import DateTime

@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Audience import Audience
 
 
@@ -56,7 +56,7 @@ class PeopleAudience(Audience):
         default=None,
         description="Audiences defined by a person's minimum age.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

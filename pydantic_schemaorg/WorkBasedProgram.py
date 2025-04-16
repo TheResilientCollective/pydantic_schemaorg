@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.EducationalOccupationalProgram import EducationalOccupationalProgram
 
 
@@ -31,7 +31,7 @@ class WorkBasedProgram(EducationalOccupationalProgram):
      "be provided. Note: for historical reasons, any textual label and formal code provided"
      "as a literal may be assumed to be from O*NET-SOC.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MonetaryAmountDistribution import MonetaryAmountDistribution

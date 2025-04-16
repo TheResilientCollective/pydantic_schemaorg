@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalEnumeration import MedicalEnumeration
 
 
@@ -12,4 +12,4 @@ class MedicalProcedureType(MedicalEnumeration):
     Model depth: 5
     """
     type_: str = Field(default="MedicalProcedureType", alias='@type', const=True)
-    
+

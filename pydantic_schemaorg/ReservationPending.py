@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ReservationStatusType import ReservationStatusType
 
 
@@ -12,4 +12,4 @@ class ReservationPending(ReservationStatusType):
     Model depth: 6
     """
     type_: str = Field(default="ReservationPending", alias='@type', const=True)
-    
+

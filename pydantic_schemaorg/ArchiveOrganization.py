@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LocalBusiness import LocalBusiness
 
 
@@ -21,7 +21,7 @@ class ArchiveOrganization(LocalBusiness):
         description="Collection, [fonds](https://en.wikipedia.org/wiki/Fonds), or item held, kept"
      "or maintained by an [[ArchiveOrganization]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.ArchiveComponent import ArchiveComponent

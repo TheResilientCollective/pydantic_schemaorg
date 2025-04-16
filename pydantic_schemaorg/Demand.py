@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import date, datetime, time
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -192,7 +192,7 @@ class Demand(Intangible):
      "specification is valid. This allows e.g. specifying that a certain freight charge is"
      "valid only for a certain quantity.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.TypeAndQuantityNode import TypeAndQuantityNode

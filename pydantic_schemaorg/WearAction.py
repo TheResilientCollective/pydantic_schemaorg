@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.UseAction import UseAction
 
 
@@ -12,4 +12,4 @@ class WearAction(UseAction):
     Model depth: 5
     """
     type_: str = Field(default="WearAction", alias='@type', const=True)
-    
+

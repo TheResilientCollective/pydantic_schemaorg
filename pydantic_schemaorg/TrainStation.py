@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CivicStructure import CivicStructure
 
 
@@ -12,4 +12,4 @@ class TrainStation(CivicStructure):
     Model depth: 4
     """
     type_: str = Field(default="TrainStation", alias='@type', const=True)
-    
+

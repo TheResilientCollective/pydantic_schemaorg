@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictBool
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -29,7 +29,7 @@ class HealthPlanNetwork(Intangible):
         default=None,
         description="Whether The costs to the patient for services under this network or formulary.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

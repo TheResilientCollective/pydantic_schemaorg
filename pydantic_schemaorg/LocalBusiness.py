@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Place import Place
 from pydantic_schemaorg.Organization import Organization
 
@@ -51,7 +51,7 @@ class LocalBusiness(Place, Organization):
         default=None,
         description="Cash, Credit Card, Cryptocurrency, Local Exchange Tradings System, etc.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

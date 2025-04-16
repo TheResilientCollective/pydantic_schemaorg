@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.DayOfWeek import DayOfWeek
 
 
@@ -12,4 +12,4 @@ class Wednesday(DayOfWeek):
     Model depth: 5
     """
     type_: str = Field(default="Wednesday", alias='@type', const=True)
-    
+

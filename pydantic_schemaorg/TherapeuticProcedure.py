@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalProcedure import MedicalProcedure
 
 
@@ -32,7 +32,7 @@ class TherapeuticProcedure(MedicalProcedure):
         default=None,
         description="Specifying a drug or medicine used in a medication procedure.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DoseSchedule import DoseSchedule

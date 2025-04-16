@@ -6,7 +6,7 @@ from typing import List, Optional, Union
 from datetime import date
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Product import Product
 
 
@@ -246,7 +246,7 @@ class Vehicle(Product):
         default=None,
         description="The date the item e.g. vehicle was purchased by the current owner.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

@@ -6,7 +6,7 @@ from datetime import date, datetime
 from pydantic import AnyUrl, StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -146,7 +146,7 @@ class EducationalOccupationalProgram(Intangible):
      "or optional; no guarantee is implied about whether the course will be available to everyone"
      "on the program.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Duration import Duration

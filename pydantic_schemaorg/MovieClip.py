@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Clip import Clip
 
 
@@ -12,4 +12,4 @@ class MovieClip(Clip):
     Model depth: 4
     """
     type_: str = Field(default="MovieClip", alias='@type', const=True)
-    
+

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.FinancialProduct import FinancialProduct
 
 
@@ -12,4 +12,4 @@ class CurrencyConversionService(FinancialProduct):
     Model depth: 5
     """
     type_: str = Field(default="CurrencyConversionService", alias='@type', const=True)
-    
+

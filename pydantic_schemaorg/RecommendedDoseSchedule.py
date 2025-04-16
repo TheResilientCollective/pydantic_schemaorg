@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.DoseSchedule import DoseSchedule
 
 
@@ -14,4 +14,4 @@ class RecommendedDoseSchedule(DoseSchedule):
     Model depth: 5
     """
     type_: str = Field(default="RecommendedDoseSchedule", alias='@type', const=True)
-    
+

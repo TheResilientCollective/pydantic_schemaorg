@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalSignOrSymptom import MedicalSignOrSymptom
 
 
@@ -24,7 +24,7 @@ class MedicalSign(MedicalSignOrSymptom):
         default=None,
         description="A diagnostic test that can identify this sign.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.PhysicalExam import PhysicalExam

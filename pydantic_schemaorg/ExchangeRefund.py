@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.RefundTypeEnumeration import RefundTypeEnumeration
 
 
@@ -12,4 +12,4 @@ class ExchangeRefund(RefundTypeEnumeration):
     Model depth: 5
     """
     type_: str = Field(default="ExchangeRefund", alias='@type', const=True)
-    
+

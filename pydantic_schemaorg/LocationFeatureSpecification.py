@@ -5,7 +5,7 @@ from datetime import date, datetime
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PropertyValue import PropertyValue
 
 
@@ -30,7 +30,7 @@ class LocationFeatureSpecification(PropertyValue):
         default=None,
         description="The hours during which this service or contact is available.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DateTime import DateTime

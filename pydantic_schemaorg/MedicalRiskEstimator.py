@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalEntity import MedicalEntity
 
 
@@ -25,7 +25,7 @@ class MedicalRiskEstimator(MedicalEntity):
         description="A modifiable or non-modifiable risk factor included in the calculation, e.g. age, coexisting"
      "condition.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicalEntity import MedicalEntity

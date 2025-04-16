@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalImagingTechnique import MedicalImagingTechnique
 
 
@@ -12,4 +12,4 @@ class CT(MedicalImagingTechnique):
     Model depth: 6
     """
     type_: str = Field(default="CT", alias='@type', const=True)
-    
+

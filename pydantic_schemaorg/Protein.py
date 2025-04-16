@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.BioChemEntity import BioChemEntity
 
 
@@ -25,7 +25,7 @@ class Protein(BioChemEntity):
         description="A symbolic representation of a BioChemEnity. For example, a nucleotide sequence of"
      "a Gene or an amino acid sequence of a Protein.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

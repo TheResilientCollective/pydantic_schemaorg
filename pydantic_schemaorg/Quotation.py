@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -23,7 +23,7 @@ class Quotation(CreativeWork):
         description="The (e.g. fictional) character, Person or Organization to whom the quotation is attributed"
      "within the containing CreativeWork.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Person import Person

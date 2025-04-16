@@ -5,7 +5,7 @@ from pydantic import AnyUrl, StrictBool
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Substance import Substance
 
 
@@ -157,7 +157,7 @@ class Drug(Substance):
         default=None,
         description="Any FDA or other warnings about the drug (text or URL).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

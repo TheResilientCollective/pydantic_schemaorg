@@ -5,7 +5,7 @@ from pydantic import StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -27,7 +27,7 @@ class BedDetails(Intangible):
         description="The type of bed to which the BedDetail refers, i.e. the type of bed available in the quantity"
      "indicated by quantity.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

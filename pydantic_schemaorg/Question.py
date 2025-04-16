@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Comment import Comment
 
 
@@ -37,7 +37,7 @@ class Question(Comment):
      "vary in their selection mechanisms, e.g. drawing on community opinion and/or the view"
      "of the Question author.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

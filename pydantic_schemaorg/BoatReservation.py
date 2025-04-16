@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Reservation import Reservation
 
 
@@ -14,4 +14,4 @@ class BoatReservation(Reservation):
     Model depth: 4
     """
     type_: str = Field(default="BoatReservation", alias='@type', const=True)
-    
+

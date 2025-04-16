@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LegalService import LegalService
 
 
@@ -12,4 +12,4 @@ class Notary(LegalService):
     Model depth: 5
     """
     type_: str = Field(default="Notary", alias='@type', const=True)
-    
+

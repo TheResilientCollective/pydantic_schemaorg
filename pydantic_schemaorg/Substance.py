@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalEntity import MedicalEntity
 
 
@@ -25,7 +25,7 @@ class Substance(MedicalEntity):
         description="Recommended intake of this supplement for a given population as defined by a specific"
      "recommending authority.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

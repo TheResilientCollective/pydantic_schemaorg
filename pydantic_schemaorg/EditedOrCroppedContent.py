@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MediaManipulationRatingEnumeration import MediaManipulationRatingEnumeration
 
 
@@ -22,4 +22,4 @@ class EditedOrCroppedContent(MediaManipulationRatingEnumeration):
     Model depth: 5
     """
     type_: str = Field(default="EditedOrCroppedContent", alias='@type', const=True)
-    
+

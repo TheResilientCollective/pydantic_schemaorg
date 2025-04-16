@@ -6,7 +6,7 @@ from pydantic import AnyUrl, StrictBool, StrictInt, StrictFloat
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -119,7 +119,7 @@ class MerchantReturnPolicy(Intangible):
         description="The method (from an enumeration) by which the customer obtains a return shipping label"
      "for a product returned due to customer remorse.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.ReturnFeesEnumeration import ReturnFeesEnumeration

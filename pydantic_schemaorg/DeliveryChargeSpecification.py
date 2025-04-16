@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PriceSpecification import PriceSpecification
 
 
@@ -36,7 +36,7 @@ class DeliveryChargeSpecification(PriceSpecification):
      "the geo-political region(s) for which the offer or delivery charge specification is"
      "not valid, e.g. a region where the transaction is not allowed. See also [[eligibleRegion]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.TransferAction import TransferAction
 
 
@@ -14,4 +14,4 @@ class TakeAction(TransferAction):
     Model depth: 4
     """
     type_: str = Field(default="TakeAction", alias='@type', const=True)
-    
+

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LifestyleModification import LifestyleModification
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
@@ -39,7 +39,7 @@ class Diet(LifestyleModification, CreativeWork):
      "on what foods to avoid, what foods to consume, and specific alterations/deviations"
      "from the USDA or other regulatory body's approved dietary guidelines.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

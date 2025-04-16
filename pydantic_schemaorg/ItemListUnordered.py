@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ItemListOrderType import ItemListOrderType
 
 
@@ -12,4 +12,4 @@ class ItemListUnordered(ItemListOrderType):
     Model depth: 5
     """
     type_: str = Field(default="ItemListUnordered", alias='@type', const=True)
-    
+

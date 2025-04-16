@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalRiskEstimator import MedicalRiskEstimator
 
 
@@ -20,7 +20,7 @@ class MedicalRiskScore(MedicalRiskEstimator):
         default=None,
         description="The algorithm or rules to follow to compute the score.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

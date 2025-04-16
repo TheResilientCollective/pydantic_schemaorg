@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Article import Article
 
 
@@ -19,7 +19,7 @@ class Report(Article):
         default=None,
         description="The number or other unique designator assigned to a Report by the publishing organization.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

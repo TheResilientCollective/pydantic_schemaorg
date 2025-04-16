@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -39,7 +39,7 @@ class MusicRecording(CreativeWork):
         default=None,
         description="The International Standard Recording Code for the recording.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MusicPlaylist import MusicPlaylist

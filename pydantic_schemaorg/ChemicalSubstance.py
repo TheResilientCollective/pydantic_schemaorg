@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.BioChemEntity import BioChemEntity
 
 
@@ -29,7 +29,7 @@ class ChemicalSubstance(BioChemEntity):
         default=None,
         description="Intended use of the BioChemEntity by humans.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

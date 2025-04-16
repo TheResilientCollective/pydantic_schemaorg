@@ -6,7 +6,7 @@ from datetime import datetime
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -65,7 +65,7 @@ class Dataset(CreativeWork):
      "that are measured in some dataset, either described as text or as pairs of identifier"
      "and description using PropertyValue.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DataCatalog import DataCatalog

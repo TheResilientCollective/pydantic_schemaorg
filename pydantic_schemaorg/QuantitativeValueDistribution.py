@@ -5,7 +5,7 @@ from pydantic import StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -40,7 +40,7 @@ class QuantitativeValueDistribution(StructuredValue):
         default=None,
         description="The median value.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

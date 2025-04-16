@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CivicStructure import CivicStructure
 from pydantic_schemaorg.Organization import Organization
 
@@ -20,7 +20,7 @@ class EducationalOrganization(CivicStructure, Organization):
         default=None,
         description="Alumni of an organization.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Person import Person

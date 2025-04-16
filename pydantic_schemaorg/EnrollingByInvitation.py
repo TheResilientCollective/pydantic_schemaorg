@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalStudyStatus import MedicalStudyStatus
 
 
@@ -12,4 +12,4 @@ class EnrollingByInvitation(MedicalStudyStatus):
     Model depth: 6
     """
     type_: str = Field(default="EnrollingByInvitation", alias='@type', const=True)
-    
+

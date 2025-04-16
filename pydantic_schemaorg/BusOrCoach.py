@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Vehicle import Vehicle
 
 
@@ -30,7 +30,7 @@ class BusOrCoach(Vehicle):
      "using [[valueReference]] * Note 3: Note that you can use [[minValue]] and [[maxValue]]"
      "to indicate ranges.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

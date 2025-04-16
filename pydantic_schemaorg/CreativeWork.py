@@ -6,7 +6,7 @@ from pydantic import AnyUrl, StrictBool, StrictInt, StrictFloat
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Thing import Thing
 
 
@@ -618,7 +618,7 @@ class CreativeWork(Thing):
      "This is most applicable to works published in Web sites with commenting system; additional"
      "comments may exist elsewhere.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

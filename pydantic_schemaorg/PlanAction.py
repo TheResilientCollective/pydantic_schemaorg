@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.OrganizeAction import OrganizeAction
 
 
@@ -21,7 +21,7 @@ class PlanAction(OrganizeAction):
         default=None,
         description="The time the object is scheduled to.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DateTime import DateTime

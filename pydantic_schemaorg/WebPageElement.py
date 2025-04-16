@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -26,7 +26,7 @@ class WebPageElement(CreativeWork):
      "latter case, multiple matches within a page can constitute a single conceptual \"Web"
      "page element\".",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.XPathType import XPathType

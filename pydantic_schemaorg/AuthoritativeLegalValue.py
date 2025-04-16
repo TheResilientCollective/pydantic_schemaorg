@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LegalValueLevel import LegalValueLevel
 
 
@@ -15,4 +15,4 @@ class AuthoritativeLegalValue(LegalValueLevel):
     Model depth: 5
     """
     type_: str = Field(default="AuthoritativeLegalValue", alias='@type', const=True)
-    
+

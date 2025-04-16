@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.NLNonprofitType import NLNonprofitType
 
 
@@ -12,4 +12,4 @@ class NonprofitANBI(NLNonprofitType):
     Model depth: 6
     """
     type_: str = Field(default="NonprofitANBI", alias='@type', const=True)
-    
+

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -19,7 +19,7 @@ class Map(CreativeWork):
         default=None,
         description="Indicates the kind of Map, from the MapCategoryType Enumeration.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MapCategoryType import MapCategoryType

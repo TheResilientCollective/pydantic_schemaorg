@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CommunicateAction import CommunicateAction
 
 
@@ -19,7 +19,7 @@ class CommentAction(CommunicateAction):
         default=None,
         description="A sub property of result. The Comment created or sent as a result of this action.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Comment import Comment

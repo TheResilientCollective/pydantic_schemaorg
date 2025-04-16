@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Article import Article
 
 
@@ -19,7 +19,7 @@ class SocialMediaPosting(Article):
         default=None,
         description="A CreativeWork such as an image, video, or audio clip shared as part of this posting.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.CreativeWork import CreativeWork

@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl, StrictBool, StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Thing import Thing
 
 
@@ -234,7 +234,7 @@ class Place(Thing):
         default=None,
         description="The fax number.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.GeoCoordinates import GeoCoordinates

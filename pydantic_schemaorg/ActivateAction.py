@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ControlAction import ControlAction
 
 
@@ -13,4 +13,4 @@ class ActivateAction(ControlAction):
     Model depth: 4
     """
     type_: str = Field(default="ActivateAction", alias='@type', const=True)
-    
+

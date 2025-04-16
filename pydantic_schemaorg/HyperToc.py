@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -27,7 +27,7 @@ class HyperToc(CreativeWork):
         default=None,
         description="Indicates a [[HyperTocEntry]] in a [[HyperToc]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MediaObject import MediaObject

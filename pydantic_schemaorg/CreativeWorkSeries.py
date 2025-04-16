@@ -5,7 +5,7 @@ from datetime import date, datetime
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Series import Series
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
@@ -43,7 +43,7 @@ class CreativeWorkSeries(Series, CreativeWork):
      "You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)"
      "for, this serial publication.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DateTime import DateTime

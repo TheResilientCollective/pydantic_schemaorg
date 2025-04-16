@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Place import Place
 
 
@@ -19,7 +19,7 @@ class Residence(Place):
         default=None,
         description="A floorplan of some [[Accommodation]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.FloorPlan import FloorPlan

@@ -5,7 +5,7 @@ from pydantic import StrictBool
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PublicationEvent import PublicationEvent
 
 
@@ -32,7 +32,7 @@ class BroadcastEvent(PublicationEvent):
         default=None,
         description="The event being broadcast such as a sporting event or awards ceremony.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Boolean import Boolean

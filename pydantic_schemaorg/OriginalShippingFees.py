@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ReturnFeesEnumeration import ReturnFeesEnumeration
 
 
@@ -12,4 +12,4 @@ class OriginalShippingFees(ReturnFeesEnumeration):
     Model depth: 5
     """
     type_: str = Field(default="OriginalShippingFees", alias='@type', const=True)
-    
+

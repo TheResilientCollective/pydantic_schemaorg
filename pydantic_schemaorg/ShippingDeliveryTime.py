@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import time
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -43,7 +43,7 @@ class ShippingDeliveryTime(StructuredValue):
         default=None,
         description="Days of the week when the merchant typically operates, indicated via opening hours markup.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.QuantitativeValue import QuantitativeValue

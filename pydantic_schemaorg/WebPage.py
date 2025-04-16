@@ -6,7 +6,7 @@ from typing import List, Optional, Union
 from datetime import date
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -76,7 +76,7 @@ class WebPage(CreativeWork):
         default=None,
         description="One of the domain specialities to which this web page's content applies.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

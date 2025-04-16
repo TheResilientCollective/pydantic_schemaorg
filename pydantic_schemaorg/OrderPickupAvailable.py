@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.OrderStatus import OrderStatus
 
 
@@ -12,4 +12,4 @@ class OrderPickupAvailable(OrderStatus):
     Model depth: 6
     """
     type_: str = Field(default="OrderPickupAvailable", alias='@type', const=True)
-    
+

@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl, StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -40,7 +40,7 @@ class TypeAndQuantityNode(StructuredValue):
         default=None,
         description="The quantity of the goods included in the offer.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.BusinessFunction import BusinessFunction

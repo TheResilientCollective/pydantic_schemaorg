@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.FinancialProduct import FinancialProduct
 
 
@@ -31,7 +31,7 @@ class BankAccount(FinancialProduct):
      "zero. An overdraft allows the individual to continue withdrawing money even if the account"
      "has no funds in it. Basically the bank allows people to borrow a set amount of money.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MonetaryAmount import MonetaryAmount

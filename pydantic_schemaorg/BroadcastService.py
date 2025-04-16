@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Service import Service
 
 
@@ -66,7 +66,7 @@ class BroadcastService(Service):
         description="A [callsign](https://en.wikipedia.org/wiki/Call_sign), as used in broadcasting"
      "and radio communications to identify people, radio and TV stations, or vehicles.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

@@ -5,7 +5,7 @@ from pydantic import StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Role import Role
 
 
@@ -21,7 +21,7 @@ class OrganizationRole(Role):
         description="A number associated with a role in an organization, for example, the number on an athlete's"
      "jersey.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

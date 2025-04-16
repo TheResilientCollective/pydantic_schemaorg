@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ImageObject import ImageObject
 
 
@@ -16,4 +16,4 @@ class ImageObjectSnapshot(ImageObject):
     Model depth: 5
     """
     type_: str = Field(default="ImageObjectSnapshot", alias='@type', const=True)
-    
+

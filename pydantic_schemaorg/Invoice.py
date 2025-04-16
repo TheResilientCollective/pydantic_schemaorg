@@ -6,7 +6,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -88,7 +88,7 @@ class Invoice(Intangible):
      "If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms"
      "are preferred.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DateTime import DateTime

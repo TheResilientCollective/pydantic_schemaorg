@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -40,7 +40,7 @@ class RepaymentSpecification(StructuredValue):
         description="a type of payment made in cash during the onset of the purchase of an expensive good/service."
      "The payment typically represents only a percentage of the full purchase price.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MonetaryAmount import MonetaryAmount

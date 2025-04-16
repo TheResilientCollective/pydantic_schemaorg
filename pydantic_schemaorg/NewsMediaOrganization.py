@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Organization import Organization
 
 
@@ -80,7 +80,7 @@ class NewsMediaOrganization(Organization):
         description="For a [[NewsMediaOrganization]], a link to the masthead page or a page listing top editorial"
      "management.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

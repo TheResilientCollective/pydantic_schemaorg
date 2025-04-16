@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.InteractAction import InteractAction
 
 
@@ -34,7 +34,7 @@ class CommunicateAction(InteractAction):
      "codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also"
      "[[availableLanguage]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Thing import Thing

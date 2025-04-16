@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LocalBusiness import LocalBusiness
 
 
@@ -14,4 +14,4 @@ class HomeAndConstructionBusiness(LocalBusiness):
     Model depth: 4
     """
     type_: str = Field(default="HomeAndConstructionBusiness", alias='@type', const=True)
-    
+

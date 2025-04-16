@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Episode import Episode
 
 
@@ -44,7 +44,7 @@ class TVEpisode(Episode):
         default=None,
         description="The TV series to which this episode or season belongs.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

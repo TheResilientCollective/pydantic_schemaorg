@@ -6,7 +6,7 @@ from pydantic import AnyUrl, StrictBool
 from datetime import date, datetime, time
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -126,7 +126,7 @@ class MediaObject(CreativeWork):
      "the geo-political region(s) for which the offer or delivery charge specification is"
      "not valid, e.g. a region where the transaction is not allowed. See also [[eligibleRegion]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

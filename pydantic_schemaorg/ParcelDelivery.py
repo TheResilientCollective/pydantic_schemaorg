@@ -6,7 +6,7 @@ from pydantic import AnyUrl
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -68,7 +68,7 @@ class ParcelDelivery(Intangible):
         default=None,
         description="The overall order the items in this delivery were included in.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

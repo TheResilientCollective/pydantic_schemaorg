@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.BioChemEntity import BioChemEntity
 
 
@@ -36,7 +36,7 @@ class Gene(BioChemEntity):
         description="Tissue, organ, biological sample, etc in which activity of this gene has been observed"
      "experimentally. For example brain, digestive system.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

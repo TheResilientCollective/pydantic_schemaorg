@@ -5,7 +5,7 @@ from pydantic import StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PhysicalActivity import PhysicalActivity
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
@@ -55,7 +55,7 @@ class ExercisePlan(PhysicalActivity, CreativeWork):
         default=None,
         description="How often one should engage in the activity.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

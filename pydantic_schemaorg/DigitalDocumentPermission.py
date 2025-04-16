@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -23,7 +23,7 @@ class DigitalDocumentPermission(Intangible):
         default=None,
         description="The person, organization, contact point, or audience that has been granted this permission.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DigitalDocumentPermissionType import DigitalDocumentPermissionType

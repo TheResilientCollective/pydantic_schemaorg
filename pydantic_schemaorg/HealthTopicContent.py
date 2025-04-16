@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.WebContent import WebContent
 
 
@@ -26,7 +26,7 @@ class HealthTopicContent(WebContent):
      "For example, that the content is an overview, or that it talks about treatment, self-care,"
      "treatments or their side-effects.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.HealthAspectEnumeration import HealthAspectEnumeration

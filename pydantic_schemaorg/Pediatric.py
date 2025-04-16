@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalSpecialty import MedicalSpecialty
 from pydantic_schemaorg.MedicalBusiness import MedicalBusiness
 
@@ -14,4 +14,4 @@ class Pediatric(MedicalSpecialty, MedicalBusiness):
     Model depth: 5
     """
     type_: str = Field(default="Pediatric", alias='@type', const=True)
-    
+

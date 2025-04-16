@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -44,7 +44,7 @@ class Permit(Intangible):
         default=None,
         description="The geographic area where a permit or similar thing is valid.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Service import Service

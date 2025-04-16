@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Product import Product
 
 
@@ -34,7 +34,7 @@ class ProductModel(Product):
      "as well as which values distinguish amongst those variants). When used with [[ProductGroup]],"
      "this property can apply to any [[Product]] included in the group.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.ProductGroup import ProductGroup

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.EventStatusType import EventStatusType
 
 
@@ -13,4 +13,4 @@ class EventPostponed(EventStatusType):
     Model depth: 6
     """
     type_: str = Field(default="EventPostponed", alias='@type', const=True)
-    
+

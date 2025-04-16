@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Boolean import Boolean
 
 
@@ -12,4 +12,4 @@ class True_(Boolean):
     Model depth: 6
     """
     type_: str = Field(default="True", alias='@type', const=True)
-    
+

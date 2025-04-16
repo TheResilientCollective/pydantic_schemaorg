@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.DeliveryMethod import DeliveryMethod
 
 
@@ -14,4 +14,4 @@ class ParcelService(DeliveryMethod):
     Model depth: 5
     """
     type_: str = Field(default="ParcelService", alias='@type', const=True)
-    
+

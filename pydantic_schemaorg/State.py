@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.AdministrativeArea import AdministrativeArea
 
 
@@ -12,4 +12,4 @@ class State(AdministrativeArea):
     Model depth: 4
     """
     type_: str = Field(default="State", alias='@type', const=True)
-    
+

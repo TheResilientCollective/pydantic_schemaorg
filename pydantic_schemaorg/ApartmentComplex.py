@@ -5,7 +5,7 @@ from pydantic import AnyUrl, StrictBool, StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Residence import Residence
 
 
@@ -43,7 +43,7 @@ class ApartmentComplex(Residence):
      "or the number of accommodation units for a specific [[FloorPlan]] (within its specific"
      "[[ApartmentComplex]]). See also [[numberOfAccommodationUnits]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

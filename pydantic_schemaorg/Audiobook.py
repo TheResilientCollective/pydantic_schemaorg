@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.AudioObject import AudioObject
 from pydantic_schemaorg.Book import Book
 
@@ -24,7 +24,7 @@ class Audiobook(AudioObject, Book):
         default=None,
         description="A person who reads (performs) the audiobook.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Duration import Duration

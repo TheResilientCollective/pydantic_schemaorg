@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalIntangible import MedicalIntangible
 
 
@@ -37,7 +37,7 @@ class DrugStrength(MedicalIntangible):
         description="Recommended intake of this supplement for a given population as defined by a specific"
      "recommending authority.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

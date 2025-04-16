@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import date
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalEntity import MedicalEntity
 
 
@@ -37,7 +37,7 @@ class MedicalGuideline(MedicalEntity):
         default=None,
         description="The medical conditions, treatments, etc. that are the subject of the guideline.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

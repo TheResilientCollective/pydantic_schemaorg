@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Thing import Thing
 
 
@@ -71,7 +71,7 @@ class BioChemEntity(Thing):
         description="Subcellular location where this BioChemEntity is located; please use PropertyValue"
      "if you want to include any evidence.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

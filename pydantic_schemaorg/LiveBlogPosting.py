@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.BlogPosting import BlogPosting
 
 
@@ -32,7 +32,7 @@ class LiveBlogPosting(BlogPosting):
      "before the Event's start time. The LiveBlogPosting may also be created before coverage"
      "begins.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DateTime import DateTime

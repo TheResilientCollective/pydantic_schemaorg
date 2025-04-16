@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ListItem import ListItem
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
@@ -53,7 +53,7 @@ class HowToDirection(ListItem, CreativeWork):
         default=None,
         description="A sub-property of instrument. A supply consumed when performing instructions or a direction.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

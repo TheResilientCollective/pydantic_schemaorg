@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.AnatomicalStructure import AnatomicalStructure
 
 
@@ -33,7 +33,7 @@ class Nerve(AnatomicalStructure):
         default=None,
         description="The neurological pathway that originates the neurons.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.AnatomicalStructure import AnatomicalStructure

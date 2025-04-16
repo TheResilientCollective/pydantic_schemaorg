@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalBusiness import MedicalBusiness
 from pydantic_schemaorg.MedicalOrganization import MedicalOrganization
 
@@ -28,7 +28,7 @@ class Physician(MedicalBusiness, MedicalOrganization):
         default=None,
         description="A medical service available from this provider.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicalSpecialty import MedicalSpecialty

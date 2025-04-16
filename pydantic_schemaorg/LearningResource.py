@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -60,7 +60,7 @@ class LearningResource(CreativeWork):
         description="The predominant type or kind characterizing the learning resource. For example, 'presentation',"
      "'handout'.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.AlignmentObject import AlignmentObject

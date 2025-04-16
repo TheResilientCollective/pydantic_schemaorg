@@ -5,7 +5,7 @@ from pydantic import StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.EntertainmentBusiness import EntertainmentBusiness
 from pydantic_schemaorg.CivicStructure import CivicStructure
 
@@ -21,7 +21,7 @@ class MovieTheater(EntertainmentBusiness, CivicStructure):
         default=None,
         description="The number of screens in the movie theater.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

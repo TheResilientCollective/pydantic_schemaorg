@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.WebPage import WebPage
 
 
@@ -24,7 +24,7 @@ class MedicalWebPage(WebPage):
         description="An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment',"
      "'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicalAudienceType import MedicalAudienceType

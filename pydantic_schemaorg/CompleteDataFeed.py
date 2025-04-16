@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.DataFeed import DataFeed
 
 
@@ -19,4 +19,4 @@ class CompleteDataFeed(DataFeed):
     Model depth: 5
     """
     type_: str = Field(default="CompleteDataFeed", alias='@type', const=True)
-    
+

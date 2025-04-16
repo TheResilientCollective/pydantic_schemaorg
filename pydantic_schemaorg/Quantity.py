@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -13,4 +13,4 @@ class Quantity(Intangible):
     Model depth: 3
     """
     type_: str = Field(default="Quantity", alias='@type', const=True)
-    
+

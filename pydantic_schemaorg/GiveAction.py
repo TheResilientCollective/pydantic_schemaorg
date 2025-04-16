@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.TransferAction import TransferAction
 
 
@@ -22,7 +22,7 @@ class GiveAction(TransferAction):
         default=None,
         description="A sub property of participant. The participant who is at the receiving end of the action.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.ContactPoint import ContactPoint

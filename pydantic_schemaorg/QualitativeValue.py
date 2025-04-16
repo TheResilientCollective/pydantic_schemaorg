@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Enumeration import Enumeration
 
 
@@ -60,7 +60,7 @@ class QualitativeValue(Enumeration):
         description="A secondary value that provides additional information on the original value, e.g."
      "a reference temperature or a type of measurement.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.PropertyValue import PropertyValue

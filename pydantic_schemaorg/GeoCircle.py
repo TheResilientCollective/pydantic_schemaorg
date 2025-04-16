@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictInt, StrictFloat
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.GeoShape import GeoShape
 
 
@@ -28,7 +28,7 @@ class GeoCircle(GeoShape):
         description="Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise"
      "via Distance notation).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.GeoCoordinates import GeoCoordinates

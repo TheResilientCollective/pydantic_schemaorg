@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Quantity import Quantity
 
 
@@ -12,4 +12,4 @@ class Duration(Quantity):
     Model depth: 4
     """
     type_: str = Field(default="Duration", alias='@type', const=True)
-    
+

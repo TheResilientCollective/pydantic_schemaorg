@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import datetime, time
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Reservation import Reservation
 
 
@@ -42,7 +42,7 @@ class LodgingReservation(Reservation):
         default=None,
         description="Textual description of the unit type (including suite vs. room, size of bed, etc.).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

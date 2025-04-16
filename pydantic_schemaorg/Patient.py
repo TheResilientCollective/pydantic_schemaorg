@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalAudience import MedicalAudience
 from pydantic_schemaorg.Person import Person
 
@@ -29,7 +29,7 @@ class Patient(MedicalAudience, Person):
         default=None,
         description="Specifying a drug or medicine used in a medication procedure.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicalCondition import MedicalCondition

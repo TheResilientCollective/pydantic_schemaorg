@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalTrialDesign import MedicalTrialDesign
 
 
@@ -12,4 +12,4 @@ class PlaceboControlledTrial(MedicalTrialDesign):
     Model depth: 6
     """
     type_: str = Field(default="PlaceboControlledTrial", alias='@type', const=True)
-    
+

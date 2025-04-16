@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Comment import Comment
 
 
@@ -20,7 +20,7 @@ class Answer(Comment):
         description="A step-by-step or full explanation about Answer. Can outline how this Answer was achieved"
      "or contain more broad clarification or statement about it.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Comment import Comment

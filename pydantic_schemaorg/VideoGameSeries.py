@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import AnyUrl
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWorkSeries import CreativeWorkSeries
 
 
@@ -114,7 +114,7 @@ class VideoGameSeries(CreativeWorkSeries):
         default=None,
         description="The composer of the soundtrack.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Person import Person

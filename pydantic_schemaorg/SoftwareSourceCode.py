@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.CreativeWork import CreativeWork
 
 
@@ -51,7 +51,7 @@ class SoftwareSourceCode(CreativeWork):
         description="Target Operating System / Product to which the code applies. If applies to several versions,"
      "just the product name can be used.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Service import Service
 
 
@@ -20,7 +20,7 @@ class WebAPI(Service):
         default=None,
         description="Further documentation describing the Web API in more detail.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

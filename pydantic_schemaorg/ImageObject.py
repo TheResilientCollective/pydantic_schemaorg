@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictBool
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MediaObject import MediaObject
 
 
@@ -37,7 +37,7 @@ class ImageObject(MediaObject):
         description="The caption for this object. For downloadable machine formats (closed caption, subtitles"
      "etc.) use MediaObject and indicate the [[encodingFormat]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

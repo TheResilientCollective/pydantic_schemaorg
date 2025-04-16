@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictBool
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -42,7 +42,7 @@ class DeliveryTimeSettings(StructuredValue):
         description="Label to match an [[OfferShippingDetails]] with a [[DeliveryTimeSettings]] (within"
      "the context of a [[shippingSettingsLink]] cross-reference).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.DefinedRegion import DefinedRegion

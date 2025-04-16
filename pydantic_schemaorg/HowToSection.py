@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ItemList import ItemList
 from pydantic_schemaorg.ListItem import ListItem
 from pydantic_schemaorg.CreativeWork import CreativeWork
@@ -23,7 +23,7 @@ class HowToSection(ItemList, ListItem, CreativeWork):
         description="A single step item (as HowToStep, text, document, video, etc.) or a HowToSection (originally"
      "misnamed 'steps'; 'step' is preferred).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

@@ -5,7 +5,7 @@ from pydantic import StrictBool, StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.FinancialProduct import FinancialProduct
 from pydantic_schemaorg.PaymentMethod import PaymentMethod
 
@@ -36,7 +36,7 @@ class PaymentCard(FinancialProduct, PaymentMethod):
         description="The minimum payment is the lowest amount of money that one is required to pay on a credit"
      "card statement each month.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Boolean import Boolean

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ScholarlyArticle import ScholarlyArticle
 
 
@@ -20,7 +20,7 @@ class MedicalScholarlyArticle(ScholarlyArticle):
         description="The type of the medical article, taken from the US NLM MeSH publication type catalog."
      "See also [MeSH documentation](http://www.nlm.nih.gov/mesh/pubtypes.html).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

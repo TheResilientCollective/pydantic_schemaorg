@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Collection import Collection
 from pydantic_schemaorg.Product import Product
 
@@ -22,7 +22,7 @@ class ProductCollection(Collection, Product):
         description="This links to a node or nodes indicating the exact quantity of the products included in"
      "an [[Offer]] or [[ProductCollection]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.TypeAndQuantityNode import TypeAndQuantityNode

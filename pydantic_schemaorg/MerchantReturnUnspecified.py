@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MerchantReturnEnumeration import MerchantReturnEnumeration
 
 
@@ -12,4 +12,4 @@ class MerchantReturnUnspecified(MerchantReturnEnumeration):
     Model depth: 5
     """
     type_: str = Field(default="MerchantReturnUnspecified", alias='@type', const=True)
-    
+

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.MedicalIntangible import MedicalIntangible
 
 
@@ -26,7 +26,7 @@ class DDxElement(MedicalIntangible):
         description="One of a set of signs and symptoms that can be used to distinguish this diagnosis from others"
      "in the differential diagnosis.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicalCondition import MedicalCondition

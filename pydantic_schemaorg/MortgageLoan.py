@@ -5,7 +5,7 @@ from pydantic import StrictBool
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.LoanOrCredit import LoanOrCredit
 
 
@@ -25,7 +25,7 @@ class MortgageLoan(LoanOrCredit):
         default=None,
         description="Amount of mortgage mandate that can be converted into a proper mortgage at a later stage.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Boolean import Boolean

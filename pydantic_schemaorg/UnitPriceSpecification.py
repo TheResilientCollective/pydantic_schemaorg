@@ -5,7 +5,7 @@ from pydantic import AnyUrl, StrictInt, StrictFloat
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PriceSpecification import PriceSpecification
 
 
@@ -64,7 +64,7 @@ class UnitPriceSpecification(PriceSpecification):
         description="Identifies a price component (for example, a line item on an invoice), part of the total"
      "price for an offer.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Number import Number

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Event import Event
 
 
@@ -27,7 +27,7 @@ class ScreeningEvent(Event):
         default=None,
         description="The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Movie import Movie

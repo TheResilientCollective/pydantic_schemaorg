@@ -6,7 +6,7 @@ from pydantic import AnyUrl, StrictBool, StrictInt, StrictFloat
 from datetime import date, datetime
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Intangible import Intangible
 
 
@@ -197,7 +197,7 @@ class JobPosting(Intangible):
         description="The legal requirements such as citizenship, visa and other documentation required"
      "for an applicant to this job.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Text import Text

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.ChooseAction import ChooseAction
 
 
@@ -19,7 +19,7 @@ class VoteAction(ChooseAction):
         default=None,
         description="A sub property of object. The candidate subject of this action.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Person import Person

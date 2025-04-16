@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from datetime import datetime, time
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.StructuredValue import StructuredValue
 
 
@@ -53,7 +53,7 @@ class InteractionCounter(StructuredValue):
      "Event uses startDate/endDate instead of startTime/endTime, even when describing"
      "dates with times. This situation may be clarified in future revisions.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.Integer import Integer

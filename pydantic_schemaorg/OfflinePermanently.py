@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.GameServerStatus import GameServerStatus
 
 
@@ -12,4 +12,4 @@ class OfflinePermanently(GameServerStatus):
     Model depth: 6
     """
     type_: str = Field(default="OfflinePermanently", alias='@type', const=True)
-    
+

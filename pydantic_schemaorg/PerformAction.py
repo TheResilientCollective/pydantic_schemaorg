@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.PlayAction import PlayAction
 
 
@@ -19,7 +19,7 @@ class PerformAction(PlayAction):
         default=None,
         description="A sub property of location. The entertainment business where the action occurred.",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.EntertainmentBusiness import EntertainmentBusiness

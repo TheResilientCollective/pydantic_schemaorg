@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Room import Room
 
 
@@ -16,4 +16,4 @@ class MeetingRoom(Room):
     Model depth: 5
     """
     type_: str = Field(default="MeetingRoom", alias='@type', const=True)
-    
+

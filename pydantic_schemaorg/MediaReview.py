@@ -5,7 +5,7 @@ from pydantic import AnyUrl
 from typing import List, Optional, Union
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Review import Review
 
 
@@ -39,7 +39,7 @@ class MediaReview(Review):
         description="Describes, in a [[MediaReview]] when dealing with [[DecontextualizedContent]],"
      "background information that can contribute to better interpretation of the [[MediaObject]].",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.URL import URL

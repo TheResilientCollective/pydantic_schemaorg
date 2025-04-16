@@ -5,7 +5,7 @@ from typing import List, Optional, Union
 from pydantic import StrictBool
 
 
-from pydantic import Field
+from pydantic.v1 import Field
 from pydantic_schemaorg.Organization import Organization
 
 
@@ -29,7 +29,7 @@ class MedicalOrganization(Organization):
         description="Name or unique ID of network. (Networks are often reused across different insurance"
      "plans).",
     )
-    
+
 
 if TYPE_CHECKING:
     from pydantic_schemaorg.MedicalSpecialty import MedicalSpecialty
