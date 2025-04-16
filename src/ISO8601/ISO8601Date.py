@@ -1,8 +1,8 @@
 import re
 from typing import no_type_check, Optional, Dict, cast, Any, Pattern, TYPE_CHECKING, Generator, AnyStr, Union
 
-from pydantic import BaseConfig
-from pydantic.fields import ModelField
+from pydantic.v1 import BaseConfig
+from pydantic.v1.fields import ModelField
 from pydantic.utils import update_not_none
 from pydantic.validators import str_validator, constr_length_validator
 
