@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pydantic_schemaorg"
-version = "0.0.3"
-description = 'Pydantic classes for Schema.org'
+version = "1.0.7"
+description = 'Pydantic classes for Schema.org update for pydatic v2'
 authors = [
     "Reinoud Baker <reinoud@lexiq.nl>",
     "Ewout Mante <e.mante@lexiq.nl>"
