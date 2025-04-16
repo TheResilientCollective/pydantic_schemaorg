@@ -3,7 +3,7 @@ from typing import no_type_check, Optional, Dict, cast, Any, Pattern, TYPE_CHECK
 
 from pydantic import BaseConfig
 from pydantic.v1.fields import ModelField
-from pydantic.utils import update_not_none
+from pydantic.v1.utils import update_not_none
 from pydantic.v1.validators import str_validator, constr_length_validator
 
 from pydantic_schemaorg.ISO8601 import errors
