@@ -1,2 +1,2 @@
-pydantic>2
+pydantic<3.0.0, >=2
 jinja2
